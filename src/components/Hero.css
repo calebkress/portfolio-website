@@ -1,0 +1,53 @@
+.hero-section {
+    padding: 5rem 2rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .hero-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-content {
+      flex-direction: row;
+    }
+  
+    .hero-photo {
+      margin-right: 2rem;
+      margin-bottom: 0;
+      object-fit: cover;
+      object-position: center top;
+    }
+  
+    .hero-text {
+      text-align: left;
+    }
+  }
+  
