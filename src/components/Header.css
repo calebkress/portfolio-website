@@ -1,4 +1,4 @@
-/* Header.css */
+/* Desktop Styles */
 .site-header {
   background-color: #333;
   color: white;
@@ -35,9 +35,34 @@
   color: #0073e6;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
+  .site-header {
+    padding: 0.5rem;  /* Reduce padding on mobile */
+  }
+
+  .site-header nav {
+    justify-content: space-between;  /* Ensure items are spread evenly */
+  }
+
   .nav-list {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;  /* Keep items in a row */
+    justify-content: space-around;  /* Space them evenly */
+    gap: 0.5rem;  /* Further reduce gap */
+    width: 100%;
+  }
+
+  .nav-list li {
+    font-size: 0.9rem;  /* Further reduce font size for small screens */
+  }
+
+  .nav-list a {
+    padding: 0.3rem;  /* Adjust padding */
+    text-align: center;
+  }
+
+  /* Optional: Allow flex wrapping if still cutting off */
+  .nav-list {
+    flex-wrap: wrap;  /* Allow wrapping if items are still cut off */
   }
 }
