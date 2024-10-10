@@ -29,8 +29,12 @@ const Projects = () => {
             <p>{project.description}</p>
             <p><strong>Tech Stack:</strong> {project.techStack.join(', ')}</p>
             <div className="project-links">
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+              {project.githubLink !== '#' && (
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+              )}
+              {project.demoLink !== '#' && (
+                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+              )}
             </div>
           </div>
         ))}
