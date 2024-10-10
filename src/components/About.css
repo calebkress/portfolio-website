@@ -1,3 +1,4 @@
+/* About.css */
 .about-section {
     padding: 4rem 2rem;
     text-align: center;
@@ -35,18 +36,31 @@
     line-height: 1.6;
   }
   
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-      text-align: center;
-    }
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
   
-    .about-photo {
-      margin-bottom: 1.5rem;
-    }
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-    .about-text {
-      text-align: center;
-    }
+  .tech-item i {
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-item:hover i {
+    transform: scale(1.1);
+  }
+  
+  .tech-item span {
+    font-size: 1rem; 
   }
   
