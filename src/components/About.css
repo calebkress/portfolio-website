@@ -1,55 +1,89 @@
+/* Desktop Styles */
 .about-section {
     padding: 1rem 0;
-    scroll-margin-top: 61px; 
+    scroll-margin-top: 61px;
     text-align: center;
-}
-
-.about-text {
+  }
+  
+  .about-text {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-}
-
-.about-text h1 {
+  }
+  
+  .about-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-}
-
-.about-text p {
+  }
+  
+  .about-text p {
     font-size: 1.2rem;
     line-height: 1.6;
-}
-
-h2 {
+  }
+  
+  h2 {
     margin-top: 2rem;
     font-size: 2rem;
-}
-
-.tech-group {
+  }
+  
+  .tech-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; 
+    gap: 2rem;
     justify-content: center;
     margin-bottom: 2rem;
-}
-
-.tech-item {
+  }
+  
+  .tech-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.tech-item i {
+  }
+  
+  .tech-item i {
     font-size: 40px;
     margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
-}
-
-.tech-item:hover i {
+  }
+  
+  .tech-item:hover i {
     transform: scale(1.1);
-}
-
-.tech-item span {
+  }
+  
+  .tech-item span {
     font-size: 1rem;
     text-align: center;
-}
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .about-text {
+      padding: 0 1rem;  
+      text-align: center;  
+    }
+  
+    .about-text h1 {
+      font-size: 2rem;  
+    }
+  
+    .about-text p {
+      font-size: 1rem;  
+    }
+  
+    h2 {
+      font-size: 1.5rem;  
+    }
+  
+    .tech-group {
+      gap: 1.5rem; 
+    }
+  
+    .tech-item i {
+      font-size: 30px;  
+    }
+  
+    .tech-item span {
+      font-size: 0.9rem;  
+    }
+  }
+  
