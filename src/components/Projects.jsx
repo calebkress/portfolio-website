@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 
 const Projects = () => {
   const projectList = [
@@ -19,15 +20,18 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects">
+    <section className="projects-section">
       <h1>Projects</h1>
-      <div>
+      <div className="projects-grid">
         {projectList.map((project, index) => (
-          <div key={index}>
+          <div key={index} className="project-card">
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             <p><strong>Tech Stack:</strong> {project.techStack.join(', ')}</p>
-            <a href={project.githubLink}>GitHub</a> | <a href={project.demoLink}>Live Demo</a>
+            <div className="project-links">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
           </div>
         ))}
       </div>
