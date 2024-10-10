@@ -1,5 +1,6 @@
 .hero-section {
     padding: 2rem 1rem;
+    scroll-margin-top: 61px;
     background-color: #333;
     color: white;
     text-align: center;
