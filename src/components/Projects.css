@@ -1,3 +1,6 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 .projects-section {
     padding: 1rem 0;
     scroll-margin-top: 61px;

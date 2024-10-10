@@ -8,14 +8,39 @@ const Projects = () => {
       description: "A machine learning-driven home price prediction application for the Austin, TX area.",
       techStack: ["Python", "Pandas", "numpy", "scikit-learn", "JavaScript", "React", "Bootstrap", "AWS EC2", "AWS Amplify"],
       githubLink: "https://github.com/calebkress/house-price-prediction",
-      demoLink: "#"
+      demoLink: "#",
+      screenshots: [
+        "/homescopemmain.png",
+        "/homescopeform.png"
+      ],
+      date: "August 2023 - March 2024"
     },
     {
       name: "WeGo Transportation Solutions",
       description: "A TaaS delivery service for the medical industry utilizing simulated autonomous vehicles.",
       techStack: ["JavaScript", "React", "Python", "Node.js", "MySQL", "MongoDB", "DigitalOcean Droplet"],
       githubLink: "#",
-      demoLink: "#"
+      demoLink: "#",
+      screenshots: [],
+      date: "August 2023 - March 2024"
+    },
+    {
+      name: "dataset.tools",
+      description: "An Electron desktop utility for users of the data.world platform.",
+      techStack: ["JavaScript", "React", "Node.js", "Express.js", "Electron", "MySQL"],
+      githubLink: "https://github.com/PhiDataKappa/dataset.tools",
+      demoLink: "#",
+      screenshots: ["datasettools.png"],
+      date: "August 2023 - March 2024"
+    },
+    {
+      name: "Campfire",
+      description: "A collaborative storytelling app, where users tell stories through character-limited messages.",
+      techStack: ["JavaScript", "React", "Node.js", "Express.js", "MySQL"],
+      githubLink: "https://github.com/Constant-Time/Campfire",
+      demoLink: "#",
+      screenshots: ["campfire.png"],
+      date: "August 2023 - March 2024"
     }
   ];
 
