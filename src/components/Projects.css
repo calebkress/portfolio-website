@@ -1,21 +1,65 @@
 .projects-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .projects-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+  
   .project-card {
+    padding: 1.5rem;
     border: 1px solid #ccc;
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
   .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
-  .project-card a {
-    color: #333;
+  
+  .project-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .project-links a {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
   }
   
