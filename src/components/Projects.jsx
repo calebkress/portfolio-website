@@ -57,7 +57,11 @@ const Projects = () => {
         {projectList.map((project, index) => (
           <div key={index} className="project-card">
             {project.screenshot && (
-              <img src={project.screenshot} alt={`${project.name} screenshot`} className="project-screenshot" />
+              <img 
+                src={project.screenshot} 
+                alt={`Screenshot of ${project.name} project`} 
+                className="project-screenshot" 
+              />
             )}
             <h2>{project.name}</h2>
             <p className="project-date">{project.date}</p>
@@ -65,10 +69,24 @@ const Projects = () => {
             <p><strong>Tech Stack:</strong> {project.techStack.join(', ')}</p>
             <div className="project-links">
               {project.githubLink !== '#' && (
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a 
+                  href={project.githubLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label={`GitHub repository for ${project.name}`}
+                >
+                  GitHub
+                </a>
               )}
               {project.demoLink !== '#' && (
-                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a 
+                  href={project.demoLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label={`Live demo for ${project.name}`}
+                >
+                  Live Demo
+                </a>
               )}
             </div>
           </div>
