@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  .about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  .about p {
+    max-width: 600px;
+  }
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about img {
+      margin-bottom: 1rem;
+    }
+  }
+  
