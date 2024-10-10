@@ -61,6 +61,7 @@ const Projects = () => {
                 src={project.screenshot} 
                 alt={`Screenshot of ${project.name} project`} 
                 className="project-screenshot" 
+                loading="lazy"
               />
             )}
             <h2>{project.name}</h2>
