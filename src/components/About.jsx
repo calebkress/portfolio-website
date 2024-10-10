@@ -3,21 +3,25 @@ import './About.css';
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-text">
         <h1>About Me</h1>
         <p>
-            Hi, I’m Caleb Kress, a passionate software engineer with a strong interest in Machine Learning and Data Science. 
-            I love diving deep into code, solving complex problems, and bringing creative solutions to life through technology.
-            Whether it's developing intuitive front-end interfaces or architecting back-end solutions, I enjoy every step of the process.
+            Hi, I’m Caleb Kress, a software engineer with a passion for Machine Learning and Data Science. 
+            My journey began studying ancient languages at the University of St. Andrews in Scotland, 
+            where I developed a love for structure and problem-solving. After returning to Austin and 
+            discovering programming, I quickly realized the parallels between language and code, 
+            fueling my transition into software development.
         </p>
         <p>
-            I’m currently focused on sharpening my skills in machine learning and artificial intelligence, and I’m excited about 
-            the future possibilities of working on projects that merge these fields with real-world applications. I’m always 
-            looking for new challenges and opportunities to grow.
+            With a degree in Computer Science from St. Edward’s University and training from Hack Reactor, 
+            I’ve developed a diverse skill set in both web development and data science. I thrive on solving complex 
+            problems and building creative solutions—whether through predictive modeling, intuitive front-end 
+            interfaces, or robust back-end systems.
         </p>
         <p>
-            When I’m not coding, you can find me exploring Austin’s food scene, hiking, or gaming. 
+        When I’m not coding, I enjoy exploring Austin’s food scene, hiking, and gaming. 
+        I’m always looking for new challenges and opportunities to grow. 
         </p>
 
         <h2>Technologies I Work With</h2>
