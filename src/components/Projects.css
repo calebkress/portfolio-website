@@ -23,6 +23,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
   }
   
   .project-card:hover {
@@ -32,6 +33,12 @@
   
   .project-card h2 {
     font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-date {
+    font-size: 0.9rem; 
+    color: #9f9f9f;        
     margin-bottom: 1rem;
   }
   
@@ -56,6 +63,15 @@
   
   .project-links a:hover {
     background-color: #555;
+  }
+  
+  .project-screenshot {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    object-fit: cover;
   }
   
   @media (max-width: 768px) {
