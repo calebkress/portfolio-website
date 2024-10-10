@@ -4,15 +4,21 @@ import './Projects.css';
 const Projects = () => {
   const projectList = [
     {
+      name: "SentimentAI",
+      description: "A sentiment analysis model, trained on the sentiment140 dataset, that analyzes news articles and visualizes sentiment using D3.js.",
+      techStack: ["Python", "Pandas", "scikit-learn", "JavaScript", "D3.js", "AWS EC2", "AWS Amplify"],
+      githubLink: "https://github.com/calebkress/sentimentAI",
+      demoLink: "#",
+      screenshot: "/sentimentAI.png",
+      date: "September 2024 - "
+    },
+    {
       name: "HomeScope",
       description: "A machine learning-driven home price prediction application for the Austin, TX area.",
       techStack: ["Python", "Pandas", "numpy", "scikit-learn", "JavaScript", "React", "Bootstrap", "AWS EC2", "AWS Amplify"],
       githubLink: "https://github.com/calebkress/house-price-prediction",
       demoLink: "#",
-      screenshots: [
-        "/homescopemmain.png",
-        "/homescopeform.png"
-      ],
+      screenshot: "/homescopemain.png",
       date: "August 2023 - March 2024"
     },
     {
@@ -21,8 +27,8 @@ const Projects = () => {
       techStack: ["JavaScript", "React", "Python", "Node.js", "MySQL", "MongoDB", "DigitalOcean Droplet"],
       githubLink: "#",
       demoLink: "#",
-      screenshots: [],
-      date: "August 2023 - March 2024"
+      screenshot: null,
+      date: "January 2023 - May 2023"
     },
     {
       name: "dataset.tools",
@@ -30,8 +36,8 @@ const Projects = () => {
       techStack: ["JavaScript", "React", "Node.js", "Express.js", "Electron", "MySQL"],
       githubLink: "https://github.com/PhiDataKappa/dataset.tools",
       demoLink: "#",
-      screenshots: ["datasettools.png"],
-      date: "August 2023 - March 2024"
+      screenshot: "/datasettools.png",
+      date: "December 2018 - January 2019"
     },
     {
       name: "Campfire",
@@ -39,8 +45,8 @@ const Projects = () => {
       techStack: ["JavaScript", "React", "Node.js", "Express.js", "MySQL"],
       githubLink: "https://github.com/Constant-Time/Campfire",
       demoLink: "#",
-      screenshots: ["campfire.png"],
-      date: "August 2023 - March 2024"
+      screenshot: "/campfire.png",
+      date: "November 2018"
     }
   ];
 
@@ -50,7 +56,11 @@ const Projects = () => {
       <div className="projects-grid">
         {projectList.map((project, index) => (
           <div key={index} className="project-card">
+            {project.screenshot && (
+              <img src={project.screenshot} alt={`${project.name} screenshot`} className="project-screenshot" />
+            )}
             <h2>{project.name}</h2>
+            <p className="project-date">{project.date}</p>
             <p>{project.description}</p>
             <p><strong>Tech Stack:</strong> {project.techStack.join(', ')}</p>
             <div className="project-links">
