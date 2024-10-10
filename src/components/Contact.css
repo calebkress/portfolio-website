@@ -36,9 +36,27 @@
     color: #0073e6;
   }
   
+  /* Mobile Styles */
   @media (max-width: 768px) {
-    .contact-details {
-      text-align: center;
+    .contact-section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .contact-section h1 {
+      font-size: 2rem;  
+    }
+  
+    .contact-section p {
+      font-size: 1rem;  
+    }
+  
+    .contact-details p {
+      font-size: 1rem;  
+    }
+  
+    .contact-details a {
+      font-size: 1rem;  
     }
   }
   

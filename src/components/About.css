@@ -8,7 +8,13 @@
   .about-text {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: left;  
+  }
+  
+  .about-section, .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .about-text h1 {
@@ -19,11 +25,6 @@
   .about-text p {
     font-size: 1.2rem;
     line-height: 1.6;
-  }
-  
-  h2 {
-    margin-top: 2rem;
-    font-size: 2rem;
   }
   
   .tech-group {
@@ -59,7 +60,7 @@
   @media (max-width: 768px) {
     .about-text {
       padding: 0 1rem;  
-      text-align: center;  
+      text-align: center; 
     }
   
     .about-text h1 {
