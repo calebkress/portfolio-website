@@ -1,57 +1,54 @@
-/* About.css */
 .about-section {
     padding: 4rem 2rem;
     text-align: center;
-  }
-  
-  .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
+}
+
+.about-text {
+    max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .about-text {
-    max-width: 600px;
     text-align: left;
-  }
-  
-  .about-text h1 {
+}
+
+.about-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .about-text p {
+}
+
+.about-text p {
     font-size: 1.2rem;
     line-height: 1.6;
-  }
-  
-  .tech-stack {
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.tech-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 2rem; 
     justify-content: center;
-  }
-  
-  .tech-item {
+    margin-bottom: 2rem;
+}
+
+.tech-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .tech-item i {
+}
+
+.tech-item i {
     font-size: 40px;
     margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
-  }
-  
-  .tech-item:hover i {
+}
+
+.tech-item:hover i {
     transform: scale(1.1);
-  }
-  
-  .tech-item span {
-    font-size: 1rem; 
-  }
-  
+}
+
+.tech-item span {
+    font-size: 1rem;
+    text-align: center;
+}
