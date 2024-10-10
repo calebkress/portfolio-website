@@ -1,15 +1,13 @@
-/* Hero Section Styles */
 .hero-section {
-    padding: 1rem;  /* Reduce padding for mobile */
+    padding: 1rem;
     scroll-margin-top: 61px;
     background-color: #333;
     color: white;
     text-align: center;
     width: 100%;
-    box-sizing: border-box;  /* Ensure padding is respected */
+    box-sizing: border-box;  
   }
   
-  /* Content is centered */
   .hero-content {
     display: flex;
     align-items: center;
@@ -19,12 +17,11 @@
     margin: 0 auto;
   }
   
-  /* Image and text */
   .hero-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 1rem;  /* Reduced margin */
+    margin-bottom: 1rem;  
     object-fit: cover;
     object-position: center top;
   }
@@ -36,7 +33,6 @@
     text-align: center;
   }
   
-  /* Adjust font sizes */
   .hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -52,7 +48,7 @@
   
   @media (min-width: 768px) {
     .hero-section {
-      padding: 2rem 1rem;  /* Add padding back for larger screens */
+      padding: 2rem 1rem;  
     }
   
     .hero-content {
