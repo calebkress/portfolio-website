@@ -27,7 +27,7 @@ const Projects = () => {
       techStack: ["JavaScript", "React", "Python", "Node.js", "MySQL", "MongoDB", "DigitalOcean Droplet"],
       githubLink: "#",
       demoLink: "#",
-      screenshot: null,
+      screenshot: "/wego.png",
       date: "January 2023 - May 2023"
     },
     {
