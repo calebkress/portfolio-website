@@ -17,7 +17,7 @@ const Projects = () => {
       description: "A machine learning-driven home price prediction application for the Austin, TX area.",
       techStack: ["Python", "Pandas", "numpy", "scikit-learn", "JavaScript", "React", "Bootstrap", "AWS EC2", "AWS Amplify"],
       githubLink: "https://github.com/calebkress/house-price-prediction",
-      demoLink: "#",
+      demoLink: "https://homescope.homes/",
       screenshot: "/homescopemain.png",
       date: "August 2023 - March 2024"
     },
