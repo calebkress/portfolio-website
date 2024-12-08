@@ -56,3 +56,21 @@
     }
   }
   
+  .project-links {
+    display: flex;
+    flex-direction: column; /* Arrange links vertically */
+    gap: 0.5rem; /* Adds spacing between the links */
+    margin-top: 1rem; /* Optional: Adds spacing above the links section */
+  }
+  
+  .project-links a {
+    text-decoration: none; /* Optional: Customize link style */
+    color: #007bff; /* Optional: Change to a desired color */
+    font-weight: bold; /* Optional: Make links more prominent */
+    transition: color 0.2s ease-in-out; /* Optional: Smooth hover effect */
+  }
+  
+  .project-links a:hover {
+    color: #0056b3; /* Optional: Change link color on hover */
+  }
+  
